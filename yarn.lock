@@ -13,6 +13,14 @@
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.7.8.tgz#86cb0974bcab7e64e29b57d6d9021102307257de"
 
+"@apidevtools/json-schema-ref-parser@^11.6.0":
+  version "11.6.4"
+  resolved "https://registry.yarnpkg.com/@apidevtools/json-schema-ref-parser/-/json-schema-ref-parser-11.6.4.tgz#0f3e02302f646471d621a8850e6a346d63c8ebd4"
+  dependencies:
+    "@jsdevtools/ono" "^7.1.3"
+    "@types/json-schema" "^7.0.15"
+    js-yaml "^4.1.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.23.5", "@babel/code-frame@^7.24.7":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.24.7.tgz#882fd9e09e8ee324e496bd040401c6f046ef4465"
@@ -305,93 +313,185 @@
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.20.2.tgz#a70f4ac11c6a1dfc18b8bbb13284155d933b9537"
 
+"@esbuild/aix-ppc64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.21.4.tgz#f83eb142df3ca7b49531c1ed680b81e484316508"
+
 "@esbuild/android-arm64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.20.2.tgz#db1c9202a5bc92ea04c7b6840f1bbe09ebf9e6b9"
+
+"@esbuild/android-arm64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.21.4.tgz#dd328039daccd6033b2d1e536c054914bfc92287"
 
 "@esbuild/android-arm@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.20.2.tgz#3b488c49aee9d491c2c8f98a909b785870d6e995"
 
+"@esbuild/android-arm@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.21.4.tgz#76767a989720a97b206ea14c52af6e4589e48b0d"
+
 "@esbuild/android-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/android-x64/-/android-x64-0.20.2.tgz#3b1628029e5576249d2b2d766696e50768449f98"
+
+"@esbuild/android-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-x64/-/android-x64-0.21.4.tgz#14a8ae3c35702d882086efb5a8f8d7b0038d8d35"
 
 "@esbuild/darwin-arm64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/darwin-arm64/-/darwin-arm64-0.20.2.tgz#6e8517a045ddd86ae30c6608c8475ebc0c4000bb"
 
+"@esbuild/darwin-arm64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-arm64/-/darwin-arm64-0.21.4.tgz#7e735046005e4c12e9139e0bdd1fa6a754430d57"
+
 "@esbuild/darwin-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/darwin-x64/-/darwin-x64-0.20.2.tgz#90ed098e1f9dd8a9381695b207e1cff45540a0d0"
+
+"@esbuild/darwin-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-x64/-/darwin-x64-0.21.4.tgz#db623553547a5fe3502a63aa88306e9023178482"
 
 "@esbuild/freebsd-arm64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.20.2.tgz#d71502d1ee89a1130327e890364666c760a2a911"
 
+"@esbuild/freebsd-arm64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.21.4.tgz#91cbad647c079bf932086fbd4749d7f563df67b8"
+
 "@esbuild/freebsd-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/freebsd-x64/-/freebsd-x64-0.20.2.tgz#aa5ea58d9c1dd9af688b8b6f63ef0d3d60cea53c"
+
+"@esbuild/freebsd-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-x64/-/freebsd-x64-0.21.4.tgz#723299b9859ccbe5532fecbadba3ac33019ba8e8"
 
 "@esbuild/linux-arm64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-arm64/-/linux-arm64-0.20.2.tgz#055b63725df678379b0f6db9d0fa85463755b2e5"
 
+"@esbuild/linux-arm64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm64/-/linux-arm64-0.21.4.tgz#531743f861e1ef6e50b874d6c784cda37aa5e685"
+
 "@esbuild/linux-arm@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-arm/-/linux-arm-0.20.2.tgz#76b3b98cb1f87936fbc37f073efabad49dcd889c"
+
+"@esbuild/linux-arm@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm/-/linux-arm-0.21.4.tgz#1144b5654764960dd97d90ddf0893a9afc63ad91"
 
 "@esbuild/linux-ia32@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-ia32/-/linux-ia32-0.20.2.tgz#c0e5e787c285264e5dfc7a79f04b8b4eefdad7fa"
 
+"@esbuild/linux-ia32@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ia32/-/linux-ia32-0.21.4.tgz#c81b6f2ed3308d3b75ccefb5ac63bc4cf3a9d2e9"
+
 "@esbuild/linux-loong64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.20.2.tgz#a6184e62bd7cdc63e0c0448b83801001653219c5"
+
+"@esbuild/linux-loong64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.21.4.tgz#87b6af7cd0f2551653955fc2dc465b7f4464af0a"
 
 "@esbuild/linux-mips64el@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-mips64el/-/linux-mips64el-0.20.2.tgz#d08e39ce86f45ef8fc88549d29c62b8acf5649aa"
 
+"@esbuild/linux-mips64el@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-mips64el/-/linux-mips64el-0.21.4.tgz#fec73cd39490a0c45d052bef03e011a0ad366c06"
+
 "@esbuild/linux-ppc64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-ppc64/-/linux-ppc64-0.20.2.tgz#8d252f0b7756ffd6d1cbde5ea67ff8fd20437f20"
+
+"@esbuild/linux-ppc64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ppc64/-/linux-ppc64-0.21.4.tgz#ea3b5e13b0fc8666bd4c6f7ea58bd1830f3e6e78"
 
 "@esbuild/linux-riscv64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-riscv64/-/linux-riscv64-0.20.2.tgz#19f6dcdb14409dae607f66ca1181dd4e9db81300"
 
+"@esbuild/linux-riscv64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-riscv64/-/linux-riscv64-0.21.4.tgz#80d406f653fc6b193edaeb55ac88d4ac22c8f155"
+
 "@esbuild/linux-s390x@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-s390x/-/linux-s390x-0.20.2.tgz#3c830c90f1a5d7dd1473d5595ea4ebb920988685"
+
+"@esbuild/linux-s390x@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-s390x/-/linux-s390x-0.21.4.tgz#9cbd26854b5b12cf22fb54c96cd1adffaf6ace6f"
 
 "@esbuild/linux-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-x64/-/linux-x64-0.20.2.tgz#86eca35203afc0d9de0694c64ec0ab0a378f6fff"
 
+"@esbuild/linux-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-x64/-/linux-x64-0.21.4.tgz#44dfe1c5cad855362c830c604dba97fbb16fc114"
+
 "@esbuild/netbsd-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/netbsd-x64/-/netbsd-x64-0.20.2.tgz#e771c8eb0e0f6e1877ffd4220036b98aed5915e6"
+
+"@esbuild/netbsd-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/netbsd-x64/-/netbsd-x64-0.21.4.tgz#89b97d823e1cc4bf8c4e5dc8f76c8d6ceb1c87f3"
 
 "@esbuild/openbsd-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/openbsd-x64/-/openbsd-x64-0.20.2.tgz#9a795ae4b4e37e674f0f4d716f3e226dd7c39baf"
 
+"@esbuild/openbsd-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/openbsd-x64/-/openbsd-x64-0.21.4.tgz#080715bb4981c326364320d7b56835608e2bd98d"
+
 "@esbuild/sunos-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/sunos-x64/-/sunos-x64-0.20.2.tgz#7df23b61a497b8ac189def6e25a95673caedb03f"
+
+"@esbuild/sunos-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/sunos-x64/-/sunos-x64-0.21.4.tgz#8d838a8ac80e211536490108b72fb0091a811626"
 
 "@esbuild/win32-arm64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/win32-arm64/-/win32-arm64-0.20.2.tgz#f1ae5abf9ca052ae11c1bc806fb4c0f519bacf90"
 
+"@esbuild/win32-arm64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-arm64/-/win32-arm64-0.21.4.tgz#94afb4c2ac89b0f09791606d6d93fdab322f81c8"
+
 "@esbuild/win32-ia32@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/win32-ia32/-/win32-ia32-0.20.2.tgz#241fe62c34d8e8461cd708277813e1d0ba55ce23"
 
+"@esbuild/win32-ia32@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-ia32/-/win32-ia32-0.21.4.tgz#822085cd52f2f1dd90eabb59346ffa779c0bab83"
+
 "@esbuild/win32-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz#9c907b21e30a52db959ba4f80bb01a0cc403d5cc"
+
+"@esbuild/win32-x64@0.21.4":
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.21.4.tgz#11ef0398f9abee161193461910a507ef0d4c0c32"
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
@@ -410,6 +510,25 @@
     "@eslint/object-schema" "^2.1.3"
     debug "^4.3.1"
     minimatch "^3.0.5"
+
+"@eslint/config-inspector@^0.4.8":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@eslint/config-inspector/-/config-inspector-0.4.10.tgz#f3c4f86f3990f3022abb837cc4a96c0d36580b6d"
+  dependencies:
+    bundle-require "^4.1.0"
+    cac "^6.7.14"
+    chokidar "^3.6.0"
+    esbuild "^0.21.4"
+    fast-glob "^3.3.2"
+    find-up "^7.0.0"
+    get-port-please "^3.1.2"
+    h3 "^1.11.1"
+    minimatch "^9.0.4"
+    mlly "^1.7.0"
+    mrmime "^2.0.0"
+    open "^10.1.0"
+    picocolors "^1.0.1"
+    ws "^8.17.0"
 
 "@eslint/eslintrc@^3.0.2", "@eslint/eslintrc@^3.1.0":
   version "3.1.0"
@@ -493,6 +612,10 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@jsdevtools/ono@^7.1.3":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
 
 "@kwsites/file-exists@^1.1.1":
   version "1.1.1"
@@ -635,7 +758,7 @@
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.2.tgz#5749f04df13bda4c863338d8dabaf370f45ef7c7"
 
-"@nuxt/devtools-kit@1.3.3":
+"@nuxt/devtools-kit@1.3.3", "@nuxt/devtools-kit@^1.3.1":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@nuxt/devtools-kit/-/devtools-kit-1.3.3.tgz#d52bcc69c82f2a78a32479c5f37d95d4ed820c20"
   dependencies:
@@ -701,7 +824,7 @@
     which "^3.0.1"
     ws "^8.17.0"
 
-"@nuxt/eslint-config@^0.3.13":
+"@nuxt/eslint-config@0.3.13":
   version "0.3.13"
   resolved "https://registry.yarnpkg.com/@nuxt/eslint-config/-/eslint-config-0.3.13.tgz#645eaac54352fff2664ca60673ddfa7be0093496"
   dependencies:
@@ -729,6 +852,24 @@
   dependencies:
     "@typescript-eslint/types" "^7.9.0"
     "@typescript-eslint/utils" "^7.9.0"
+
+"@nuxt/eslint@^0.3.13":
+  version "0.3.13"
+  resolved "https://registry.yarnpkg.com/@nuxt/eslint/-/eslint-0.3.13.tgz#a13a8b260ddbf45eec60a75c9e6015d7a954f111"
+  dependencies:
+    "@eslint/config-inspector" "^0.4.8"
+    "@nuxt/devtools-kit" "^1.3.1"
+    "@nuxt/eslint-config" "0.3.13"
+    "@nuxt/eslint-plugin" "0.3.13"
+    "@nuxt/kit" "^3.11.2"
+    chokidar "^3.6.0"
+    eslint-flat-config-utils "^0.2.4"
+    eslint-typegen "^0.2.4"
+    find-up "^7.0.0"
+    get-port-please "^3.1.2"
+    mlly "^1.7.0"
+    pathe "^1.1.2"
+    unimport "^3.7.1"
 
 "@nuxt/kit@3.11.2", "@nuxt/kit@^3.11.2":
   version "3.11.2"
@@ -1269,7 +1410,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/json-schema@*":
+"@types/json-schema@*", "@types/json-schema@^7.0.15":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
 
@@ -1953,6 +2094,12 @@ bundle-name@^4.1.0:
   dependencies:
     run-applescript "^7.0.0"
 
+bundle-require@^4.1.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/bundle-require/-/bundle-require-4.2.1.tgz#4c450a5807381d20ade987bde8ac391544257919"
+  dependencies:
+    load-tsconfig "^0.2.3"
+
 c12@^1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/c12/-/c12-1.10.0.tgz#e1936baa26fd03a9427875554aa6aeb86077b7fb"
@@ -2470,8 +2617,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.4.668:
-  version "1.4.794"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.794.tgz#cca7762998f6c42517770666e272f52a53c08605"
+  version "1.4.795"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.795.tgz#25d05961c529bc32435e5e4abdd8f9dabcbc9dc5"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2548,6 +2695,34 @@ esbuild@^0.20.1, esbuild@^0.20.2:
     "@esbuild/win32-ia32" "0.20.2"
     "@esbuild/win32-x64" "0.20.2"
 
+esbuild@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.21.4.tgz#ceb501def8edb12a5bfd9c55f3a96db698edf022"
+  optionalDependencies:
+    "@esbuild/aix-ppc64" "0.21.4"
+    "@esbuild/android-arm" "0.21.4"
+    "@esbuild/android-arm64" "0.21.4"
+    "@esbuild/android-x64" "0.21.4"
+    "@esbuild/darwin-arm64" "0.21.4"
+    "@esbuild/darwin-x64" "0.21.4"
+    "@esbuild/freebsd-arm64" "0.21.4"
+    "@esbuild/freebsd-x64" "0.21.4"
+    "@esbuild/linux-arm" "0.21.4"
+    "@esbuild/linux-arm64" "0.21.4"
+    "@esbuild/linux-ia32" "0.21.4"
+    "@esbuild/linux-loong64" "0.21.4"
+    "@esbuild/linux-mips64el" "0.21.4"
+    "@esbuild/linux-ppc64" "0.21.4"
+    "@esbuild/linux-riscv64" "0.21.4"
+    "@esbuild/linux-s390x" "0.21.4"
+    "@esbuild/linux-x64" "0.21.4"
+    "@esbuild/netbsd-x64" "0.21.4"
+    "@esbuild/openbsd-x64" "0.21.4"
+    "@esbuild/sunos-x64" "0.21.4"
+    "@esbuild/win32-arm64" "0.21.4"
+    "@esbuild/win32-ia32" "0.21.4"
+    "@esbuild/win32-x64" "0.21.4"
+
 escalade@^3.1.1, escalade@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.2.tgz#54076e9ab29ea5bf3d8f1ed62acffbb88272df27"
@@ -2575,11 +2750,7 @@ eslint-config-flat-gitignore@^0.1.5:
     find-up "^7.0.0"
     parse-gitignore "^2.0.0"
 
-eslint-config-prettier@^9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
-
-eslint-flat-config-utils@^0.2.5:
+eslint-flat-config-utils@^0.2.4, eslint-flat-config-utils@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/eslint-flat-config-utils/-/eslint-flat-config-utils-0.2.5.tgz#7d229ffb347897051f49ccc000d198deec15ea16"
   dependencies:
@@ -2680,6 +2851,14 @@ eslint-scope@^8.0.1:
   dependencies:
     esrecurse "^4.3.0"
     estraverse "^5.2.0"
+
+eslint-typegen@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/eslint-typegen/-/eslint-typegen-0.2.4.tgz#3e0d0a540a17420d265dc4009e3ef0bf7366413c"
+  dependencies:
+    "@types/eslint" "^8.56.10"
+    json-schema-to-typescript-lite "^14.0.1"
+    ohash "^1.1.3"
 
 eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4.3:
   version "3.4.3"
@@ -3516,6 +3695,13 @@ json-parse-even-better-errors@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-3.0.2.tgz#b43d35e89c0f3be6b5fbbe9dc6c82467b30c28da"
 
+json-schema-to-typescript-lite@^14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/json-schema-to-typescript-lite/-/json-schema-to-typescript-lite-14.0.1.tgz#bfc6e8c647ebff2c82e0ab95a1998e7e6946998e"
+  dependencies:
+    "@apidevtools/json-schema-ref-parser" "^11.6.0"
+    "@types/json-schema" "^7.0.15"
+
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
@@ -3612,6 +3798,10 @@ listhen@^1.7.2:
     ufo "^1.4.0"
     untun "^0.1.3"
     uqr "^0.1.2"
+
+load-tsconfig@^0.2.3:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/load-tsconfig/-/load-tsconfig-0.2.5.tgz#453b8cd8961bfb912dea77eb6c168fe8cca3d3a1"
 
 local-pkg@^0.4.3:
   version "0.4.3"
