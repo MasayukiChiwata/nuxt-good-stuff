@@ -17,3 +17,10 @@
 ## Vitest
 
 ## GitHub Actions
+
+## アーキテクチャ
+
+## その他
+
+### useFetch, $fetch
+https://github.com/nuxt/nuxt/discussions/25602
