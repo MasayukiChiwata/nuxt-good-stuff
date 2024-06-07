@@ -1,3 +1,5 @@
 <template>
-  <div>test</div>
+  <div>
+    <v-btn>test</v-btn>
+  </div>
 </template>
