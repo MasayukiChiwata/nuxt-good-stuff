@@ -7,11 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format:check": "prettier **/*.{js,ts,vue,json} '!package-lock.json' --ignore-path .gitignore --check",
+    "format:fix": "prettier **/*.{js,ts,vue,json} '!package-lock.json' --ignore-path .gitignore --write"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.3.13",
+    "eslint": "^9.4.0",
+    "eslint-config-prettier": "^9.1.0",
     "nuxt": "^3.11.2",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5",
     "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "vue-router": "^4.3.2",
+    "vue-tsc": "^2.0.19"
   }
 }
