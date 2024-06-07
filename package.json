@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "format:check": "prettier **/*.{js,ts,vue,json} '!package-lock.json' --ignore-path .gitignore --check",
     "format:fix": "prettier **/*.{js,ts,vue,json} '!package-lock.json' --ignore-path .gitignore --write",
-    "lint:check": "eslint ."
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {},
   "devDependencies": {
