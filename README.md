@@ -12,4 +12,8 @@
 
 ## Prisma
 
+## Zod
+
+## Vitest
+
 ## GitHub Actions
