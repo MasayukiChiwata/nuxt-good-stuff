@@ -24,3 +24,7 @@
 
 ### useFetch, $fetch
 https://github.com/nuxt/nuxt/discussions/25602
+
+### クエリパラメータ
+qs
+
