@@ -3,9 +3,6 @@
     "[vue][typescript][javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "emmet.includeLanguages": {
-        "vue": "html"
-    },
     "cSpell.words": [
         "nuxt",
         "tseslint",
