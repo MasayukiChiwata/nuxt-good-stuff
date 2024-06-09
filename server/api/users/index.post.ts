@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
   if (result instanceof ValidationError) {
     throw createError({
       statusCode: result.errorCode,
-      data: { validationError: result.validationError },
+      data: { validationIssues: result.issues },
       statusMessage: result.message,
     });
   }

@@ -1,5 +1,3 @@
-import type { ZodFormattedError } from "zod";
-
 export class BaseError extends Error {
   constructor(
     readonly errorCode: number,
@@ -9,8 +7,12 @@ export class BaseError extends Error {
   }
 }
 
-export class ValidationError<T> extends BaseError {
-  constructor(readonly validationError: ZodFormattedError<T>) {
+export type ValidationIssue = {
+  path: (string | number)[];
+  message: string;
+};
+export class ValidationError extends BaseError {
+  constructor(readonly issues: ValidationIssue[]) {
     super(422, "Validation error.");
   }
 }

@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import type { UserForm } from "@/components/Form/FormUser.vue";
-import type { UserValidationError } from "@/core/entities/user";
 
 useHead({
   title: "Create User",
 });
 
 const form = ref<UserForm>({ name: "", email: "" });
-const validationError = ref<UserValidationError>();
+const validationIssues = ref<FlatValidationIssues>({ formErrors: [], fieldErrors: {} });
 
 const { data, error, execute } = await useFetch("/api/users", {
   method: "post",
@@ -19,8 +18,10 @@ const { data, error, execute } = await useFetch("/api/users", {
 const onSubmit = async () => {
   await execute();
   if (error.value != null) {
-    console.log(error.value.data);
-    validationError.value = error.value.data?.data?.validationError;
+    const issues = error.value.data.data.validationIssues;
+    if (isValidationIssues(issues)) {
+      validationIssues.value = parseValidationIssues(issues);
+    }
     return;
   }
   console.log(data.value);
@@ -29,6 +30,6 @@ const onSubmit = async () => {
 <template>
   <div>
     <p>create user</p>
-    <FormUser v-model="form" :validation-error="validationError" class="mt-4 mx-auto" @submit-form="onSubmit" />
+    <FormUser v-model="form" :validation-issues="validationIssues" class="mt-4 mx-auto" @submit-form="onSubmit" />
   </div>
 </template>
