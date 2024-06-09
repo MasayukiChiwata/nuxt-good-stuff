@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { UserFormValidationError } from "@/server/validators/userFormValidator";
+import type { UserValidationError } from "@/core/entities/user";
 
 export type UserForm = { name: string; email: string };
 
 const form = defineModel<UserForm>({ required: true });
-defineProps<{ validationError?: UserFormValidationError }>();
+defineProps<{ validationError?: UserValidationError }>();
 defineEmits(["submit-form"]);
 </script>
 <template>
