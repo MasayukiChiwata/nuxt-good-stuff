@@ -7,4 +7,3 @@ export const userSchema = z.object({
 });
 
 export type User = z.infer<typeof userSchema>;
-export type UserValidationError = z.inferFormattedError<typeof userSchema>;
