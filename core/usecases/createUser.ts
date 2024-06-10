@@ -18,5 +18,5 @@ export const createUser = async (
     return new ValidationError([{ path: ["email"], message: "Email already exists" }]);
   }
 
-  return userRepository.create(validateResult.data);
+  return await userRepository.create(validateResult.data);
 };

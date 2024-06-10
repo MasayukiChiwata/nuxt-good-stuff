@@ -24,7 +24,13 @@ const onSubmit = async () => {
     }
     return;
   }
-  console.log(data.value);
+
+  if (data.value == null) {
+    // TODO: 例外定義
+    throw showError("問題が発生しました。");
+  }
+
+  navigateTo(`/users/${data.value.id}`);
 };
 </script>
 <template>
